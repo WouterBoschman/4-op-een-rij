@@ -12,18 +12,36 @@
 
 <script>
 	var wissel=true ;
-
 	function vakjeVullen(vakjeid){
 		var elem = document.getElementById(vakjeid);
+		if(elem.bgColor == 'red' || elem.bgColor == 'yellow'){
+
+		}
+		else{
 		if(wissel){elem.bgColor = 'red';
 		}
 		else{elem.bgColor = 'yellow'}
 		wissel=!wissel
+		
 	}
 </script>
 
 <table>
-<tr><td id="vakje00" onclick="vakjeVullen('vakje00')"></td><td id="vakje01"></td></tr>
-<tr><td id="vakje10" onclick="vakjeVullen('vakje10')"></td><td id="vakje11"></td></tr>
+<tr>
+	<td id="vakje00" onclick="vakjeVullen(id)"></td>
+	<td id="vakje01" onclick="vakjeVullen(id)"></td>
+</tr>
+<tr>
+	<td id="vakje10" onclick="vakjeVullen(id)"></td>
+	<td id="vakje11" onclick="vakjeVullen(id)"></td>
+</tr>
+<tr>
+	<td id="vakje20" onclick="vakjeVullen(id)"></td>
+	<td id="vakje21" onclick="vakjeVullen(id)"></td>
+</tr>
+<tr>
+	<td id="vakje30" onclick="vakjeVullen(id)"></td>
+	<td id="vakje31" onclick="vakjeVullen(id)"></td>
+</tr>
 </table>
 </html>
