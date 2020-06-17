@@ -1,9 +1,12 @@
 <html>
 <style>
 	td{
-		border: 2px solid blue;
+		border: 2px solid rgb(22, 22, 31);
 		width: 30px;
 		height: 30px;
+	}
+	td:hover{
+  		border: 2px solid blue;
 	}
 </style>
 
@@ -17,23 +20,10 @@
 		else{elem.bgColor = 'yellow'}
 		wissel=!wissel
 	}
-	function vakjeEvenVullen(vakjeid){
-		var elem = document.getElementById(vakjeid);
-		if(elem.bgColor=='red' ){elem.bgColor ='red'}
-		if(elem.bgColor=='yellow' ){elem.bgColor ='yellow'}
-		else{elem.bgColor = 'blue'}
-	}
-	function Vakjelegen(vakjeid){
-		var elem = document.getElementById(vakjeid);
-		if(elem.bgColor=='red'){elem.bgColor ='red'}
-		if(elem.bgColor=='yellow' ){elem.bgColor ='yellow'}
-		else{elem.bgColor ='white'}
-
-	}
 </script>
 
 <table>
-<tr><td id="vakje00" onmouseover="vakjeEvenVullen('vakje00')" onclick="vakjeVullen('vakje00')" onmouseout="Vakjelegen('vakje00')"></td><td id="vakje01"></td></tr>
+<tr><td id="vakje00" onclick="vakjeVullen('vakje00')"></td><td id="vakje01"></td></tr>
 <tr><td id="vakje10" onclick="vakjeVullen('vakje10')"></td><td id="vakje11"></td></tr>
 </table>
 </html>
