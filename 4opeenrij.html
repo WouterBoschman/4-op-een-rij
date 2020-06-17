@@ -1,0 +1,36 @@
+<html>
+<style>
+	b{
+		background-color : red;
+		font-size: 21px;
+	}
+	td{
+		border: 2px solid blue;
+		width: 30px;
+		height: 30px;
+	}
+</style>
+
+<script>
+	function JAVAzooi(){
+		var mijnvar = document.getElementById("denaam").value;
+		document.getElementById("show").innerHTML = mijnvar;
+		//alert(mijnvar);
+	}
+	function vakjeVullen(vakjeid){
+		var elem = document.getElementById(vakjeid);
+		elem.bgColor = 'red';
+	}
+</script>
+
+Geef uw naam:
+<input type=text id="denaam">
+<input type=button value="klik maar" onclick="JAVAzooi()">
+
+Welkom <b id="show" onclick="JAVAzooi()"> Hier komt je naam te staan </b>
+
+<table>
+<tr><td id="vakje00" onclick="vakjeVullen('vakje00')"></td><td id="vakje01"></td></tr>
+<tr><td id="vakje10" onclick="vakjeVullen('vakje10')"></td><td id="vakje11"></td></tr>
+</table>
+</html>
