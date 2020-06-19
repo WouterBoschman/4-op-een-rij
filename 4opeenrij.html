@@ -16,8 +16,14 @@
 		var x = 0;	
 		var KleurbaarVakje = document.getElementById('vakje'+x+id[6]);
 		while(KleurbaarVakje.bgColor == 'red' || KleurbaarVakje.bgColor == 'yellow'){
+		if(x < 5){
 		x++;
 		var KleurbaarVakje = document.getElementById("vakje"+x+id[6]);
+		}
+		else{
+			alert("deze kolom is vol");
+			return;
+		}
 		}
 		if(Kleurwissel){KleurbaarVakje.bgColor = 'red';
 			}
