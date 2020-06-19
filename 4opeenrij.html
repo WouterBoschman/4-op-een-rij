@@ -11,37 +11,77 @@
 </style>
 
 <script>
-	var wissel=true ;
-	function vakjeVullen(vakjeid){
-		var elem = document.getElementById(vakjeid);
-		if(elem.bgColor == 'red' || elem.bgColor == 'yellow'){
-
+	var Kleurwissel=true ;
+		function vakjeVullen(id){	
+		var x = 0;	
+		var KleurbaarVakje = document.getElementById('vakje'+x+id[6]);
+		while(KleurbaarVakje.bgColor == 'red' || KleurbaarVakje.bgColor == 'yellow'){
+		x++;
+		var KleurbaarVakje = document.getElementById("vakje"+x+id[6]);
 		}
-		else{
-		if(wissel){elem.bgColor = 'red';
-		}
-		else{elem.bgColor = 'yellow'}
-		wissel=!wissel
-		
+		if(Kleurwissel){KleurbaarVakje.bgColor = 'red';
+			}
+			else{KleurbaarVakje.bgColor = 'yellow'}
+		Kleurwissel=!Kleurwissel;
+					
 	}
+
 </script>
 
 <table>
 <tr>
-	<td id="vakje00" onclick="vakjeVullen(id)"></td>
-	<td id="vakje01" onclick="vakjeVullen(id)"></td>
+	<td id="vakje50" onclick="vakjeVullen(id)"></td>
+	<td id="vakje51" onclick="vakjeVullen(id)"></td>
+	<td id="vakje52" onclick="vakjeVullen(id)"></td>
+	<td id="vakje53" onclick="vakjeVullen(id)"></td>
+	<td id="vakje54" onclick="vakjeVullen(id)"></td>
+	<td id="vakje55" onclick="vakjeVullen(id)"></td>
+	<td id="vakje56" onclick="vakjeVullen(id)"></td>
 </tr>
 <tr>
-	<td id="vakje10" onclick="vakjeVullen(id)"></td>
-	<td id="vakje11" onclick="vakjeVullen(id)"></td>
-</tr>
-<tr>
-	<td id="vakje20" onclick="vakjeVullen(id)"></td>
-	<td id="vakje21" onclick="vakjeVullen(id)"></td>
+	<td id="vakje40" onclick="vakjeVullen(id)"></td>
+	<td id="vakje41" onclick="vakjeVullen(id)"></td>
+	<td id="vakje42" onclick="vakjeVullen(id)"></td>
+	<td id="vakje43" onclick="vakjeVullen(id)"></td>
+	<td id="vakje44" onclick="vakjeVullen(id)"></td>
+	<td id="vakje45" onclick="vakjeVullen(id)"></td>
+	<td id="vakje46" onclick="vakjeVullen(id)"></td>
 </tr>
 <tr>
 	<td id="vakje30" onclick="vakjeVullen(id)"></td>
 	<td id="vakje31" onclick="vakjeVullen(id)"></td>
+	<td id="vakje32" onclick="vakjeVullen(id)"></td>
+	<td id="vakje33" onclick="vakjeVullen(id)"></td>
+	<td id="vakje34" onclick="vakjeVullen(id)"></td>
+	<td id="vakje35" onclick="vakjeVullen(id)"></td>
+	<td id="vakje36" onclick="vakjeVullen(id)"></td>
+</tr>
+<tr>
+	<td id="vakje20" onclick="vakjeVullen(id)"></td>
+	<td id="vakje21" onclick="vakjeVullen(id)"></td>
+	<td id="vakje22" onclick="vakjeVullen(id)"></td>
+	<td id="vakje23" onclick="vakjeVullen(id)"></td>
+	<td id="vakje24" onclick="vakjeVullen(id)"></td>
+	<td id="vakje25" onclick="vakjeVullen(id)"></td>
+	<td id="vakje26" onclick="vakjeVullen(id)"></td>
+</tr>
+<tr>
+	<td id="vakje10" onclick="vakjeVullen(id)"></td>
+	<td id="vakje11" onclick="vakjeVullen(id)"></td>
+	<td id="vakje12" onclick="vakjeVullen(id)"></td>
+	<td id="vakje13" onclick="vakjeVullen(id)"></td>
+	<td id="vakje14" onclick="vakjeVullen(id)"></td>
+	<td id="vakje15" onclick="vakjeVullen(id)"></td>
+	<td id="vakje16" onclick="vakjeVullen(id)"></td>
+</tr>
+<tr>
+	<td id="vakje00" onclick="vakjeVullen(id)"></td>
+	<td id="vakje01" onclick="vakjeVullen(id)"></td>
+	<td id="vakje02" onclick="vakjeVullen(id)"></td>
+	<td id="vakje03" onclick="vakjeVullen(id)"></td>
+	<td id="vakje04" onclick="vakjeVullen(id)"></td>
+	<td id="vakje05" onclick="vakjeVullen(id)"></td>
+	<td id="vakje06" onclick="vakjeVullen(id)"></td>
 </tr>
 </table>
 </html>
