@@ -29,8 +29,25 @@
 			}
 			else{KleurbaarVakje.bgColor = 'yellow'}
 		Kleurwissel=!Kleurwissel;
-					
+		HorizontaalWin(x);			
 	}
+	function HorizontaalWin(rij){
+		var kleur = "leeg";
+		var som = 0;
+		for(i=0; i< 7;i++) {
+			var vakje = document.getElementById('vakje'+rij+i);
+	 		if(kleur == vakje.bgColor && vakje.bgColor != ''){ 
+				 som++
+				 if(som == 3){
+					 alert("gewonnen");
+				 }
+			}else{
+				som = 0;
+			}
+			kleur = vakje.bgColor;
+		}
+	}
+
 
 </script>
 
